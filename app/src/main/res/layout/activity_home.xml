@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medicalsampletracker.app.Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/main_toolbar"
+        android:background="@color/light_blue_background"
+        app:title="Sample Tracker"
+        app:subtitleTextColor="#fff"
+        app:titleTextColor="#fff"
+        android:theme="@style/AppToolBarStyle"/>
+
+    <ImageView
+        android:id="@+id/dashboard_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/home_buttons_layout"
+        android:layout_below="@id/main_toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_tubes_filling" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:id="@+id/home_buttons_layout"
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/reg_rec_layout"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/register_samples_button_home"
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:text="Register"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            android:drawableTop="@drawable/ic_register_samples"
+            android:drawableTint="@color/light_blue_background"
+            android:textColor="@color/light_blue_background"
+            android:background="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/receive_samples_button_home"
+            android:drawableTop="@drawable/ic_receive_samples"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            android:text="Receive"
+            android:drawableTint="@color/light_blue_background"
+            android:textColor="@color/light_blue_background"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/payments_layout"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/payments_home_button"
+            android:drawableTop="@drawable/ic_payments_black_24dp"
+            android:layout_width="170sp"
+            android:layout_height="150dp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            android:drawableTint="@color/light_blue_background"
+            android:textColor="@color/light_blue_background"
+            android:background="@color/colorWhite"
+            android:text="Payments"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:drawableTop="@drawable/ic_statistical_data"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            android:drawableTint="@color/light_blue_background"
+            android:background="#fff"
+            android:text="Statistical Data"
+            android:id="@+id/statistical_data_button"
+            android:textColor="@color/light_blue_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

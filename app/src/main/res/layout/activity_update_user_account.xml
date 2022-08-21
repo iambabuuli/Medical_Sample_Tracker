@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medicalsampletracker.app.UpdateUserAccount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_blue_background"
+        app:title="Update user Account"
+        app:titleTextColor="#fff"
+        android:theme="@style/AppToolBarStyle"
+        android:id="@+id/update_user_account_toolbar"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_user_account_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@drawable/ic_person_black_100dp"
+                android:layout_marginBottom="10sp"
+                android:id="@+id/update_user_account_circleImageView"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First name"
+                    android:enabled="false"
+                    android:textSize="20sp"
+                    android:id="@+id/update_user_first_name_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last name"
+                    android:enabled="false"
+                    android:textSize="20sp"
+                    android:id="@+id/update_user_last_name_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail"
+                    android:enabled="false"
+                    android:textSize="20sp"
+                    android:id="@+id/update_email_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    android:enabled="false"
+                    android:textSize="20sp"
+                    android:id="@+id/update_user_phone_number_text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_hint="Account Type"
+                android:id="@+id/update_user_account_account_type"
+                android:entries="@array/account_type"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                android:layout_marginTop="30sp"
+                android:text="Update Account"
+                android:id="@+id/update_account_information_button"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/solid_background_button_blue"
+                android:textSize="25sp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

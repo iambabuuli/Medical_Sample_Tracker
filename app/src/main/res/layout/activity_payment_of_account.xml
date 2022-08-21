@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medicalsampletracker.app.PaymentOfAccount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/payment_of_account_toolbar"
+        android:background="@color/light_blue_background"
+        app:title="Payment of Account"
+        app:subtitleTextColor="#fff"
+        app:titleTextColor="#fff"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:theme="@style/AppToolBarStyle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/payment_of_account_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_patients_id_number_layout">
+
+                <EditText
+                    android:id="@+id/payment_patients_id_number_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Patients I.D.Number"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_sample_id_layout">
+
+                <EditText
+                    android:id="@+id/payment_id_no_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="I.D No"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_surname_layout">
+
+                <EditText
+                    android:id="@+id/payment_surname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Surname"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_firstName_layout">
+
+                <EditText
+                    android:id="@+id/payment_firstName_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="First Name"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_title_layout">
+
+                <EditText
+                    android:id="@+id/payment_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Title"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_postal_address_layout">
+
+                <EditText
+                    android:id="@+id/payment_postal_address_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Postal Address"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_telephone_number_layout">
+
+                <EditText
+                    android:id="@+id/payment_telephone_number_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Telephone Number"
+                    android:inputType="phone"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_email_layout">
+
+                <EditText
+                    android:id="@+id/payment_email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_employer_layout">
+
+                <EditText
+                    android:id="@+id/payment_employer_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Employer"
+                    android:inputType="text"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_medical_aid_name_layout">
+
+                <EditText
+                    android:id="@+id/payment_medical_aid_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Mediacal Aid Name"
+                    android:inputType="text"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_cash_receipt_number_layout">
+
+                <EditText
+                    android:id="@+id/payment_cash_receipt_number_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Cash Receipt Number"
+                    android:inputType="text"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:text="Update Payments"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@drawable/solid_background_button_blue"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:id="@+id/update_payments_button"
+                android:layout_marginBottom="20sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:text="Create Payments"
+                android:textColor="#fff"
+                android:background="@drawable/solid_background_button_blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/submit_payments_button"
+                android:layout_marginBottom="30sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

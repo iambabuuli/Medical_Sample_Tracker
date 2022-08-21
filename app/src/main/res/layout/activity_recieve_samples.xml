@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medicalsampletracker.app.ReceiveSamples">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/receive_samples_toolbar"
+        android:background="@color/light_blue_background"
+        app:title="Receive Samples"
+        app:subtitleTextColor="#fff"
+        app:titleTextColor="#fff"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:layout_below="@id/receive_samples_toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/receive_scanCode_layout"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_bar_code_button_to_receive_id"
+            android:background="@drawable/scan_code_background"
+            android:textColor="#fff"
+            android:text="Scan Code"
+            android:padding="10sp"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receive_sample_id_layout">
+
+            <EditText
+                android:id="@+id/receive_sample_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sample id"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms_hint="Sample Status"
+        android:id="@+id/receive_sample_status_materialSpinner"
+        android:entries="@array/sample_status"
+        android:layout_below="@id/receive_scanCode_layout"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms_hint="Results"
+        android:id="@+id/receive_results_materialSpinner"
+        android:entries="@array/results"
+        android:layout_below="@id/receive_sample_status_materialSpinner"/>
+
+    <EditText
+        android:id="@+id/receive_lab_notes_text"
+        android:layout_width="match_parent"
+        android:lines="3"
+        android:layout_height="wrap_content"
+        android:hint="Lab notes"
+        android:textSize="20sp"
+        android:layout_below="@id/receive_results_materialSpinner"/>
+
+    <Button
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Sample"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/solid_background_button_blue"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/update_receive_sample_button"
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive Sample"
+        android:textColor="#fff"
+        android:background="@drawable/solid_background_button_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/receive_sample_button"
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Medical Sample Tracker</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+
+    <string name="about_info">
+        Email: tumusiimejoshua47@gmail.com
+        Mobile: 0704949865
+        Located: Gabba Road
+    </string>
+
+    <string-array name="sample_type">
+        <item>Blood</item>
+        <item>Stool</item>
+        <item>Pus</item>
+        <item>Saliva</item>
+        <item>Urine</item>
+        <item>Sputum</item>
+        <item>Biopsy</item>
+    </string-array>
+
+    <string-array name="sample_status">
+        <item>Intact</item>
+        <item>Broken Seal</item>
+        <item>Open</item>
+
+    </string-array>
+
+    <string-array name="yes_no_answer">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>Administrator</item>
+        <item>Standard</item>
+        <item>Lab Worker</item>
+    </string-array>
+
+    <string-array name="results">
+        <item>Positive</item>
+        <item>Negative</item>
+        <item>Pending</item>
+    </string-array>
+</resources>

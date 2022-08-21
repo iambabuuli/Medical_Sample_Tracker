@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medicalsampletracker.app">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_white_bg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_white_bg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.medicalsampletracker.app.StatisticalData"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.medicalsampletracker.app.RegisteredSamplesDetailedInformation"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.PaymentsHome"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.PaymentOfAccount"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.UpdateUserAccount"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.ManageAccount"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.SplashScreen"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.medicalsampletracker.app.UserAccount"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.ReceiveSamplesHome"
+            android:exported="true" />
+
+        <activity android:name="com.medicalsampletracker.app.RegisterSamplesHome"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.ReceiveSamples"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.RegisterSamples"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.AboutUs"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.Home"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.CreateAccount"
+            android:exported="true"/>
+
+        <activity android:name="com.medicalsampletracker.app.LogIn"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

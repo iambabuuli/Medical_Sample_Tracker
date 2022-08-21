@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="5sp"
+            android:src="@drawable/ic_person_black_100dp"
+            android:id="@+id/user_account_imageView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_user_first_name_edit"
+                    android:maxLines="1"
+                    android:text="First name"
+                    android:textColor="@color/light_blue_background"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_user_last_name_edit"
+                    android:text="Last name"
+                    android:textColor="@color/light_blue_background"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_phone_number_edit"
+                    android:text="Phone number"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_account_type_edit"
+                    android:text="Account type"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_user_call_user_textView_button"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawableTint="@color/light_blue_background"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_margin="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_user_edit_account_textView_button"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:drawableTint="@color/light_blue_background"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_margin="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_delete_account_textView_button"
+                    android:drawableLeft="@drawable/ic_delete_black_24dp"
+                    android:drawableTint="@color/light_blue_background"
+                    android:textSize="20sp"
+                    android:layout_margin="10sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

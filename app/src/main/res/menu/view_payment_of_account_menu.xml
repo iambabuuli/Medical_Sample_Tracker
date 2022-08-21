@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/payment_of_account_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title=""
+        android:iconTint="#fff"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/payment_of_account_create_new_record__menu_item"
+        android:icon="@drawable/ic_add_circle_outline_black_90dp"
+        android:title=""
+        android:iconTint="#fff"
+        app:showAsAction="always" />
+</menu>

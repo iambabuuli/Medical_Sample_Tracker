@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Medical Sample Tracker/app/src/main/res/layout/activity_about_us.xml" value="0.1" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Medical Sample Tracker/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/drawable/outline_border_main_buttons.xml" value="0.1" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_about_us.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_create_account.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_log_in.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_manage_account.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_payment_of_account.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_payments_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_recieve_samples.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_recieve_samples_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_register_samples.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_register_samples_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_registered_samples_detailed_information.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_statistical_data.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_update_user_account.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/activity_user_account.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/manage_user_account_details.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/material_spinner_layout.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/payment_of_account_list_details.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/received_samples_detail.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/layout/register_samples_details.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/menu/main_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/Babuuli/AndroidStudioProjects/Sample_tracker_app/app/src/main/res/menu/manage_users_account_menu.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group
+        android:id="@+id/main_menu_group">
+
+        <item
+            android:id="@+id/manage_account_app_main"
+            android:title="Manage Accounts" />
+
+        <item
+            android:id="@+id/user_account_app_main"
+            android:title="My Account"/>
+
+        <item
+            android:id="@+id/about_app_main"
+            android:title="About"/>
+
+        <item
+            android:id="@+id/logOut_app_main"
+            android:title="Log Out"/>
+
+        <item
+            android:id="@+id/exit_app_main"
+            android:title="Exit"/>
+    </group>
+
+</menu>

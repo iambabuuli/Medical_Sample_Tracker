@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medicalsampletracker.app.RegisterSamples">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/register_samples_toolbar"
+        android:background="@color/light_blue_background"
+        app:title="Register Samples"
+        app:subtitleTextColor="#fff"
+        app:titleTextColor="#fff"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/register_samples_toolbar"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_samples_toolbar"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan_bar_code_button"
+        android:background="@drawable/scan_code_background"
+        android:textColor="#fff"
+        android:text="Scan Code"
+        android:padding="10sp"
+        android:textSize="20sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_sample_id_layout">
+
+            <EditText
+                android:id="@+id/register_sample_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sample id"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_patients_id_no_layout">
+
+            <EditText
+                android:id="@+id/register_patients_id_no_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Patient's I.D No."
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_patients_surname_layout">
+
+        <EditText
+            android:id="@+id/register_patients_surname_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Patient's Surname"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_patients_first_name_layout">
+
+            <EditText
+                android:id="@+id/register_patients_first_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Patient's First Name"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_patients_date_of_birth_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_patients_date_of_birth_text"
+            android:layout_width="match_parent"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:hint="Patient's Date of Birth"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_hint="Gender"
+            android:id="@+id/register_patients_gender_Spinner"
+            android:entries="@array/gender"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_patients_address_layout">
+
+        <EditText
+            android:id="@+id/register_patients_address_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Patients Address"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_patients_age_layout">
+
+        <EditText
+            android:id="@+id/register_patients_age_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Patients Age"
+            android:inputType="number"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_hospital_or_folio_number_layout">
+
+            <EditText
+                android:id="@+id/register_hospital_or_folio_number_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Hospital /Folio No."
+                android:inputType="number"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_patients_phone_number_layout">
+
+            <EditText
+                android:id="@+id/register_patients_phone_number_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Patient's Phone Number"
+                android:inputType="number"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_patients_email_address_layout">
+
+            <EditText
+                android:id="@+id/register_patients_email_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Patient's E-mail"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_hint="Hospital Patient"
+            android:entries="@array/yes_no_answer"
+            android:id="@+id/register_hospital_patient_Spinner"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_suspected_disease_layout">
+
+        <EditText
+            android:id="@+id/register_suspected_disease_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Suspected Disease"
+            android:inputType="text"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_next_of_kin_layout">
+
+        <EditText
+            android:id="@+id/register_next_of_kin_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Next of Kin"
+            android:inputType="text"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sample_type"
+        android:id="@+id/register_sample_type_Spinner"
+        app:ms_hint="Sample Type"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_expected_date_of_return_layout">
+
+            <EditText
+                android:id="@+id/register_expected_date_of_return_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Expected Date of return"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="textMultiLine"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_clinical_or_drug_information_layout">
+
+            <EditText
+                android:id="@+id/register_clinical_or_drug_information_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Clinical/Drug Information"
+                android:inputType="textMultiLine"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Update"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/solid_background_button_blue"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/update_register_sample_button"
+        android:layout_marginBottom="20sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Register"
+        android:textColor="#fff"
+        android:background="@drawable/solid_background_button_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/submit_register_sample_button"
+        android:layout_marginBottom="30sp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

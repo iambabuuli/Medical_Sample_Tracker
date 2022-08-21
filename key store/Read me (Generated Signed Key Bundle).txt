@@ -1,0 +1,5 @@
+Key Alias: Medical Sample Tracker
+Key store password: medicalsampletracker
+Key password: medicalsampletracker
+
+C:\Users\Babuuli\AndroidStudioProjects\Medical Sample Tracker\key store\Encrypted
